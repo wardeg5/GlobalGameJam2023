@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bush05_winter.obj-72f8f6dcc0cb8a57da443db0cf5713bd.mesh"
+
+[deps]
+
+files=[ "res://.import/bush05_winter.obj-72f8f6dcc0cb8a57da443db0cf5713bd.mesh" ]
+
+source_file="res://art/models/OBJ/bushes/bush05_winter.obj"
+dest_files=[ "res://.import/bush05_winter.obj-72f8f6dcc0cb8a57da443db0cf5713bd.mesh", "res://.import/bush05_winter.obj-72f8f6dcc0cb8a57da443db0cf5713bd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

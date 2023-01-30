@@ -1,19 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
 [ext_resource path="res://terrain/data.hterrain" type="Resource" id=3]
+[ext_resource path="res://art/ground_texture/grass/Grass004_1K_Color.jpg" type="Texture" id=4]
+[ext_resource path="res://art/models/FBX/trees/tree.tscn" type="PackedScene" id=5]
+[ext_resource path="res://art/models/glb/house1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://art/ground_texture/rocks/Rocks007_1K_Color.jpg" type="Texture" id=7]
+[ext_resource path="res://art/ground_texture/dirt/Ground023_1K_Color.jpg" type="Texture" id=8]
+[ext_resource path="res://art/ground_texture/grassmix/Ground037_1K_Color.jpg" type="Texture" id=9]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 mode = 0
-textures = [ [  ], [  ] ]
+textures = [ [ ExtResource( 4 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ) ], [ ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), null ] ]
 
 [node name="Spatial" type="Spatial"]
 
 [node name="HTerrain" type="Spatial" parent="."]
 script = ExtResource( 1 )
 lod_scale = 2.0
+map_scale = Vector3( 0.4, 1, 0.3 )
 _terrain_data = ExtResource( 3 )
 chunk_size = 32
 collision_enabled = true
@@ -28,3 +36,23 @@ shader_params/u_ground_uv_scale = 20
 shader_params/u_depth_blending = true
 shader_params/u_triplanar = false
 shader_params/u_tile_reduction = Plane( 0, 0, 0, 0 )
+
+[node name="tree08" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 47.2994, 0, 50.9426 )
+
+[node name="tree09" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 36.7918, 0, 53.3016 )
+
+[node name="tree08" parent="tree09" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0117, 0, 21.6912 )
+
+[node name="house1" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 40.1562, 0, 45.8502 )
+
+[node name="Player" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.2637, 0, 57.6886 )
+
+[node name="Pivot" type="Position3D" parent="."]
+transform = Transform( 0.766044, -0.219846, 0.604023, 0, 0.939693, 0.34202, -0.642788, -0.262003, 0.719846, 39.604, 6.58087, 76.5027 )
+
+[node name="Camera" type="Camera" parent="Pivot"]

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree03_winter.obj-11d76892dc7eee86617df17d19b2767b.mesh"
+
+[deps]
+
+files=[ "res://.import/tree03_winter.obj-11d76892dc7eee86617df17d19b2767b.mesh" ]
+
+source_file="res://art/models/OBJ/trees/tree03_winter.obj"
+dest_files=[ "res://.import/tree03_winter.obj-11d76892dc7eee86617df17d19b2767b.mesh", "res://.import/tree03_winter.obj-11d76892dc7eee86617df17d19b2767b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

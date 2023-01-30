@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/grass_bush.obj-ef6739d9d9d0642ac4a0aae486efd9ae.mesh"
+
+[deps]
+
+files=[ "res://.import/grass_bush.obj-ef6739d9d9d0642ac4a0aae486efd9ae.mesh" ]
+
+source_file="res://art/models/OBJ/grass/grass_bush.obj"
+dest_files=[ "res://.import/grass_bush.obj-ef6739d9d9d0642ac4a0aae486efd9ae.mesh", "res://.import/grass_bush.obj-ef6739d9d9d0642ac4a0aae486efd9ae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
