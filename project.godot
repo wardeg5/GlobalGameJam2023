@@ -26,9 +26,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="TerrainParade"
+config/name="GlobalGameJame2023"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/stretch/aspect="keep"
 
 [editor_plugins]
 
