@@ -50,7 +50,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0117, 0, 21.6912 )
 transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 40.1562, 0, 45.8502 )
 
 [node name="Player" parent="." instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 43.2637, 0, 57.6886 )
+transform = Transform( -0.93418, 0, -0.356803, 0, 1, 0, 0.356803, 0, -0.93418, 43.2637, 0, 57.6886 )
 
 [node name="Pivot" type="Position3D" parent="."]
 transform = Transform( 0.766044, -0.219846, 0.604023, 0, 0.939693, 0.34202, -0.642788, -0.262003, 0.719846, 39.604, 6.58087, 76.5027 )
