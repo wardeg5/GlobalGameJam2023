@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -10,13 +10,28 @@
 [ext_resource path="res://art/ground_texture/dirt/Ground023_1K_Color.jpg" type="Texture" id=8]
 [ext_resource path="res://art/ground_texture/grassmix/Ground037_1K_Color.jpg" type="Texture" id=9]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Main.gd" type="Script" id=11]
+[ext_resource path="res://Mob.tscn" type="PackedScene" id=12]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
 mode = 0
 textures = [ [ ExtResource( 4 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ) ], [ ExtResource( 8 ), ExtResource( 8 ), ExtResource( 9 ), null ] ]
 
-[node name="Spatial" type="Spatial"]
+[sub_resource type="CylinderMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 1, 0, 0.329412, 1 )
+
+[sub_resource type="Curve3D" id=4]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 72.0253, 0.974046, 63.1111, 0, 0, 0, 0, 0, 0, 18.3157, 1.1478, 65.3795, 0, 0, 0, 0, 0, 0, 18.4621, 0.816308, 68.5995, 0, 0, 0, 0, 0, 0, 26.0506, 0.641403, 105.624, 0, 0, 0, 0, 0, 0, 71.8837, 0.209937, 106.321, 0, 0, 0, 0, 0, 0, 72.0881, 0.529169, 62.5426, 0, 0, 0, 0, 0, 0, 71.5037, -0.657887, 63.5829, 0, 0, 0, 0, 0, 0, 72.0253, 0.974046, 63.1111 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0 )
+}
+
+[node name="Main" type="Spatial"]
+script = ExtResource( 11 )
+mob_scene = ExtResource( 12 )
 
 [node name="HTerrain" type="Spatial" parent="."]
 script = ExtResource( 1 )
@@ -53,6 +68,42 @@ transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 4
 transform = Transform( -0.93418, 0, -0.356803, 0, 1, 0, 0.356803, 0, -0.93418, 43.2637, 0, 57.6886 )
 
 [node name="Pivot" type="Position3D" parent="."]
-transform = Transform( 0.766044, -0.219846, 0.604023, 0, 0.939693, 0.34202, -0.642788, -0.262003, 0.719846, 39.604, 6.58087, 76.5027 )
+transform = Transform( 0.766044, -0.219846, 0.604023, 0, 0.939693, 0.34202, -0.642788, -0.262003, 0.719846, 45.9572, 7.45666, 75.7898 )
 
 [node name="Camera" type="Camera" parent="Pivot"]
+fov = 38.6
+
+[node name="Cylinders" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0545, 0, 62.5839 )
+visible = false
+
+[node name="MeshInstance" type="MeshInstance" parent="Cylinders"]
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.8332, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55.8332, 0, 43.706 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="MeshInstance4" type="MeshInstance" parent="Cylinders"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.6685, 0, 43.706 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="SpawnPath" type="Path" parent="."]
+curve = SubResource( 4 )
+
+[node name="SpawnLocation" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72.0253, 0.974046, 63.1111 )
+
+[node name="MobTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]

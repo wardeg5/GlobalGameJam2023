@@ -1,9 +1,9 @@
 extends KinematicBody
 
 # Minimum speed of the mob in meters per second.
-export var min_speed = 10
+export var min_speed = 3
 # Maximum speed of the mob in meters per second.
-export var max_speed = 18
+export var max_speed = 6
 
 var velocity = Vector3.ZERO
 
