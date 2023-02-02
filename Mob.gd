@@ -1,3 +1,5 @@
+signal squashed
+
 extends KinematicBody
 
 # Minimum speed of the mob in meters per second.
@@ -13,7 +15,7 @@ func _physics_process(_delta):
 
 func initialize(start_position, player_position):
 	look_at_from_position(start_position, player_position, Vector3.UP)
-	rotate_y(rand_range(-PI / 4, PI / 4))
+	rotate_y(rand_range(-PI / 3, PI / 4	))
 
 	var random_speed = rand_range(min_speed, max_speed)
 	velocity = Vector3.FORWARD * random_speed
@@ -21,4 +23,9 @@ func initialize(start_position, player_position):
 
 
 func _on_VisibilityNotifier_screen_exited():
+	queue_free()
+
+func squash():
+	emit_signal("squashed")
+	# kill mob
 	queue_free()
