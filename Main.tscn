@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://Mob.tscn" type="PackedScene" id=12]
 [ext_resource path="res://house2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Camera.gd" type="Script" id=14]
+[ext_resource path="res://fonts/Montserrat-Medium.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://ScoreLabel.gd" type="Script" id=16]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 2 )
@@ -25,19 +27,32 @@ textures = [ [ ExtResource( 4 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 1, 0, 0.329412, 1 )
 
+[sub_resource type="Curve3D" id=4]
+_data = {
+"points": PoolVector3Array(  ),
+"tilts": PoolRealArray(  )
+}
+
+[sub_resource type="DynamicFont" id=5]
+size = 22
+font_data = ExtResource( 15 )
+
+[sub_resource type="Theme" id=6]
+default_font = SubResource( 5 )
+
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
 mob_scene = ExtResource( 12 )
 
-[node name="HTerrain" type="Spatial" parent="."]
+[node name="Ground" type="Spatial" parent="."]
 script = ExtResource( 1 )
 lod_scale = 2.0
 map_scale = Vector3( 0.4, 1, 0.3 )
 _terrain_data = ExtResource( 3 )
 chunk_size = 32
 collision_enabled = true
-collision_layer = 1
-collision_mask = 1
+collision_layer = 4
+collision_mask = 0
 shader_type = "Classic4Lite"
 custom_shader = null
 custom_globalmap_shader = null
@@ -47,9 +62,6 @@ shader_params/u_ground_uv_scale = 20
 shader_params/u_depth_blending = true
 shader_params/u_triplanar = false
 shader_params/u_tile_reduction = Plane( 0, 0, 0, 0 )
-
-[node name="tree08" parent="." instance=ExtResource( 5 )]
-transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 116.737, 0, 50.9426 )
 
 [node name="tree09" parent="." instance=ExtResource( 5 )]
 transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 106.23, 0, 53.3016 )
@@ -1155,6 +1167,9 @@ transform = Transform( 0.997938, 0, 0.06422, 0, 1, 0, -0.06422, 0, 0.997938, -1.
 [node name="tree151" parent="tree09" instance=ExtResource( 5 )]
 transform = Transform( -0.999825, 0, 0.0187257, 0, 1, 0, -0.0187257, 0, -0.999825, -1.23369, 0, 73.7699 )
 
+[node name="tree194" parent="tree09" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7549, 0, 0.541428 )
+
 [node name="house1" parent="." instance=ExtResource( 6 )]
 transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 109.594, 0, 45.8502 )
 
@@ -1204,8 +1219,23 @@ autostart = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 97.0541, -4.76837e-07, 121.736 )
 
 [node name="SpawnPath" type="Path" parent="."]
+curve = SubResource( 4 )
 
 [node name="SpawnLocation" type="PathFollow" parent="SpawnPath"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 71.5941, 0, 121.705 )
+
+[node name="UserInterface" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+theme = SubResource( 6 )
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+margin_left = 16.0
+margin_top = 14.0
+margin_right = 75.0
+margin_bottom = 28.0
+custom_colors/font_color = Color( 0.192157, 0.168627, 0.168627, 1 )
+text = "Money: 0"
+script = ExtResource( 16 )
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]

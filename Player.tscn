@@ -8,6 +8,7 @@ height = 2.34871
 radius = 0.465575
 
 [node name="Player" type="KinematicBody"]
+collision_mask = 6
 script = ExtResource( 2 )
 
 [node name="Pivot" type="Spatial" parent="."]

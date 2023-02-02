@@ -6,12 +6,15 @@
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 0.269702, 0.346736, 0.200161 )
 
-[node name="Mob" type="KinematicBody"]
+[node name="Mob" type="KinematicBody" groups=["mob"]]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="Pivot" type="Spatial" parent="."]
 
 [node name="seedling_v2" parent="Pivot" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.379006, 0.048722 )
@@ -20,5 +23,7 @@ shape = SubResource( 1 )
 [node name="VisibilityNotifier" type="VisibilityNotifier" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.349625, 0 )
 aabb = AABB( -0.25289, -0.288491, -0.29899, 0.505779, 0.576982, 0.59798 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [connection signal="screen_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_screen_exited"]
