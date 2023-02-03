@@ -30,6 +30,10 @@ config/name="GlobalGameJame2023"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+MusicPlayer="*res://MusicPlayer.tscn"
+
 [display]
 
 window/stretch/aspect="keep"

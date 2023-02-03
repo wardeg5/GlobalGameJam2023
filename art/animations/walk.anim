@@ -1,0 +1,1855 @@
+animVersion 1.1;
+mayaVersion 2022;
+timeUnit film;
+linearUnit cm;
+angularUnit deg;
+startTime 1;
+endTime 25;
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftFootEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -61.993565 auto auto 1 0 0;
+    7 -61.993566 auto auto 1 0 0;
+    13 -61.993566 auto auto 1 0 0;
+    25 -61.993566 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftFootEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -4.0276848e-05 auto auto 1 0 0;
+    7 -4.0276848e-05 auto auto 1 0 0;
+    13 -4.0276848e-05 auto auto 1 0 0;
+    25 -4.0276848e-05 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftFootEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 5.042513e-05 auto auto 1 0 0;
+    7 5.0425131e-05 auto auto 1 0 0;
+    13 5.0425131e-05 auto auto 1 0 0;
+    25 5.0425131e-05 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_LeftFootEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 12.273629 auto auto 1 0 0;
+    7 12.273629 auto auto 1 0 0;
+    13 12.273629 auto auto 1 0 0;
+    25 12.273629 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_LeftFootEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 2.3667988 auto auto 1 0 0;
+    7 2.3667988 auto auto 1 0 0;
+    13 2.3667988 auto auto 1 0 0;
+    25 2.3667988 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_LeftFootEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 10.937837 auto auto 1 0 0;
+    7 10.937837 auto auto 1 0 0;
+    13 10.937837 auto auto 1 0 0;
+    25 10.937837 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftFoot 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 3.3650215 auto auto 1 0 0;
+    7 3.3650215 auto auto 1 0 0;
+    13 3.3650215 auto auto 1 0 0;
+    25 3.3650215 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftFoot 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.8381755 auto auto 1 0 0;
+    7 0.8381755 auto auto 1 0 0;
+    13 0.8381755 auto auto 1 0 0;
+    25 0.8381755 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftFoot 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -1.8015089 auto auto 1 0 0;
+    7 -1.8015089 auto auto 1 0 0;
+    13 -1.8015089 auto auto 1 0 0;
+    25 -1.8015089 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_HipsEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    16 0 auto auto 1 0 0;
+    19 0 auto auto 1 0 0;
+    22 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_HipsEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    16 0 auto auto 1 0 0;
+    19 0 auto auto 1 0 0;
+    22 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_HipsEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    16 0 auto auto 1 0 0;
+    19 0 auto auto 1 0 0;
+    22 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_HipsEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1.7750902 auto auto 1 0 0;
+    4 1.7906793 auto auto 1 0 0;
+    7 1.8235894 auto auto 1 0 0;
+    10 1.8562397 auto auto 1 0 0;
+    13 1.87486 auto auto 1 0 0;
+    16 1.7906793 auto auto 1 0 0;
+    19 1.7797092 auto auto 1 0 0;
+    22 1.8562397 auto auto 1 0 0;
+    25 1.7750902 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_HipsEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 19.738667 auto auto 1 0 0;
+    4 19.345862 auto auto 1 0 0;
+    7 19.4477 auto auto 1 0 0;
+    10 21.433375 auto auto 1 0 0;
+    13 19.738667 auto auto 1 0 0;
+    16 19.345862 auto auto 1 0 0;
+    19 19.4477 auto auto 1 0 0;
+    22 21.433375 auto auto 1 0 0;
+    25 19.738667 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_HipsEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.59102297 auto auto 1 0 0;
+    4 -0.59102297 auto auto 1 0 0;
+    7 -0.59102297 auto auto 1 0 0;
+    10 -0.59102297 auto auto 1 0 0;
+    13 -0.59102297 auto auto 1 0 0;
+    16 -0.59102297 auto auto 1 0 0;
+    19 -0.59102297 auto auto 1 0 0;
+    22 -0.59102297 auto auto 1 0 0;
+    25 -0.59102297 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftUpLeg 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -9.953539 auto auto 1 0 0;
+    7 -9.953539 auto auto 1 0 0;
+    13 -9.953539 auto auto 1 0 0;
+    25 -9.953539 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftUpLeg 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -2.0144552 auto auto 1 0 0;
+    7 -2.0144552 auto auto 1 0 0;
+    13 -2.0144552 auto auto 1 0 0;
+    25 -2.0144552 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftUpLeg 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.17668093 auto auto 1 0 0;
+    7 -0.17668093 auto auto 1 0 0;
+    13 -0.17668093 auto auto 1 0 0;
+    25 -0.17668093 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftAnkleEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 25 auto auto 1 0 0;
+    4 21.558572 auto auto 1 0 0;
+    7 80.091976 auto auto 1 0 0;
+    13 -25 auto auto 1 0 0;
+    16 0 auto auto 1 0 0;
+    19 0 auto auto 1 0 0;
+    25 25 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftAnkleEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 3.6311346e-05 auto auto 1 0 0;
+    4 3.6257981e-05 auto auto 1 0 0;
+    7 1.117854e-05 auto auto 1 0 0;
+    13 3.6311346e-05 auto auto 1 0 0;
+    16 0 auto auto 1 0 0;
+    19 8.1280073e-06 auto auto 1 0 0;
+    25 3.6311346e-05 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftAnkleEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 3.6008644e-05 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    16 0 auto auto 1 0 0;
+    19 -2.2822477e-06 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_LeftAnkleEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -10 auto auto 1 0 0;
+    4 -10.014015 auto auto 1 0 0;
+    7 -9.9795227 auto auto 1 0 0;
+    13 10 auto auto 1 0 0;
+    16 6.875 auto auto 1 0 0;
+    19 0.287 auto auto 1 0 0;
+    25 -10 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_LeftAnkleEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 10.005718 auto auto 1 0 0;
+    4 8.797267 auto auto 1 0 0;
+    7 12.583668 auto auto 1 0 0;
+    13 7.6135022 auto auto 1 0 0;
+    16 6.0124023 auto auto 1 0 0;
+    19 5.875 auto auto 1 0 0;
+    25 10.005718 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_LeftAnkleEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 10.937836 auto auto 1 0 0;
+    4 10.937836 auto auto 1 0 0;
+    7 10.937836 auto auto 1 0 0;
+    13 10.937836 auto auto 1 0 0;
+    16 10.937836 auto auto 1 0 0;
+    19 12.12 auto auto 1 0 0;
+    25 10.937836 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftHipEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -9.9535394 auto auto 1 0 0;
+    7 -9.9535398 auto auto 1 0 0;
+    25 -9.9535397 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftHipEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -2.0144553 auto auto 1 0 0;
+    7 -2.0144554 auto auto 1 0 0;
+    25 -2.0144554 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftHipEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.17668093 auto auto 1 0 0;
+    7 -0.17668093 auto auto 1 0 0;
+    25 -0.17668093 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_LeftHipEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -1.6322632 auto auto 1 0 0;
+    7 -1.6322632 auto auto 1 0 0;
+    25 -1.6322632 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_LeftHipEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 21.705256 auto auto 1 0 0;
+    7 21.705256 auto auto 1 0 0;
+    25 21.705256 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_LeftHipEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 10.393836 auto auto 1 0 0;
+    7 10.393836 auto auto 1 0 0;
+    25 10.393836 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightHipEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -10.135989 auto auto 1 0 0;
+    7 -10.13599 auto auto 1 0 0;
+    25 -10.13599 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightHipEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 2.0125844 auto auto 1 0 0;
+    7 2.0125845 auto auto 1 0 0;
+    25 2.0125844 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightHipEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.032114096 auto auto 1 0 0;
+    7 0.032114091 auto auto 1 0 0;
+    25 0.032114092 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_RightHipEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -1.6322632 auto auto 1 0 0;
+    7 -1.6322632 auto auto 1 0 0;
+    25 -1.6322632 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_RightHipEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 21.669714 auto auto 1 0 0;
+    7 21.669714 auto auto 1 0 0;
+    25 21.669714 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_RightHipEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -11.575882 auto auto 1 0 0;
+    7 -11.575882 auto auto 1 0 0;
+    25 -11.575882 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightFootEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -9.8450775e-05 auto auto 1 0 0;
+    7 -9.8450775e-05 auto auto 1 0 0;
+    13 -9.8450775e-05 auto auto 1 0 0;
+    25 -9.8450775e-05 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightFootEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.0043530375 auto auto 1 0 0;
+    7 -0.0043530375 auto auto 1 0 0;
+    13 -0.0043530375 auto auto 1 0 0;
+    25 -0.0043530375 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightFootEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.0014044616 auto auto 1 0 0;
+    7 0.0014044616 auto auto 1 0 0;
+    13 0.0014044616 auto auto 1 0 0;
+    25 0.0014044616 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_RightFootEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 12.273642 auto auto 1 0 0;
+    7 12.273642 auto auto 1 0 0;
+    13 12.273642 auto auto 1 0 0;
+    25 12.273642 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_RightFootEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 2.3668021 auto auto 1 0 0;
+    7 2.3668021 auto auto 1 0 0;
+    13 2.3668021 auto auto 1 0 0;
+    25 2.3668021 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_RightFootEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -12.120163 auto auto 1 0 0;
+    7 -12.120163 auto auto 1 0 0;
+    13 -12.120163 auto auto 1 0 0;
+    25 -12.120163 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightFoot 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 3.2113239 auto auto 1 0 0;
+    7 3.2113239 auto auto 1 0 0;
+    13 3.2113239 auto auto 1 0 0;
+    25 3.2113239 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightFoot 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.79210678 auto auto 1 0 0;
+    7 -0.79210678 auto auto 1 0 0;
+    13 -0.79210678 auto auto 1 0 0;
+    25 -0.79210678 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightFoot 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1.8351729 auto auto 1 0 0;
+    7 1.8351729 auto auto 1 0 0;
+    13 1.8351729 auto auto 1 0 0;
+    25 1.8351729 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightAnkleEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -25 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 25 auto auto 1 0 0;
+    16 21.559 auto auto 1 0 0;
+    19 80.091999 auto auto 1 0 0;
+    25 -25 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightAnkleEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.0041636104 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 -0.0041636103 auto auto 1 0 0;
+    16 -0.0044937329 auto auto 1 0 0;
+    19 0 auto auto 1 0 0;
+    25 -0.0041636104 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightAnkleEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.00189362 auto auto 1 0 0;
+    4 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0.00189362 auto auto 1 0 0;
+    16 0.0019892507 auto auto 1 0 0;
+    19 0 auto auto 1 0 0;
+    25 0.00189362 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_RightAnkleEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 10 auto auto 1 0 0;
+    4 6.875 auto auto 1 0 0;
+    7 0.28711111 auto auto 1 0 0;
+    13 -10 auto auto 1 0 0;
+    16 -10.014 auto auto 1 0 0;
+    19 -9.98 auto auto 1 0 0;
+    25 10 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_RightAnkleEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 7.2203683 auto auto 1 0 0;
+    4 5.8747066 auto auto 1 0 0;
+    7 5.875 auto auto 1 0 0;
+    13 10.406117 auto auto 1 0 0;
+    16 8.797 auto auto 1 0 0;
+    19 12.584 auto auto 1 0 0;
+    25 7.2203683 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_RightAnkleEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -12.120164 auto auto 1 0 0;
+    4 -12.120164 auto auto 1 0 0;
+    7 -12.120164 auto auto 1 0 0;
+    13 -12.120164 auto auto 1 0 0;
+    16 -10.938 auto auto 1 0 0;
+    19 -10.938 auto auto 1 0 0;
+    25 -12.120164 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightLeg 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 6.9090285 auto auto 1 0 0;
+    7 6.9090285 auto auto 1 0 0;
+    13 6.9090285 auto auto 1 0 0;
+    25 6.9090285 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightLeg 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.0017170125 auto auto 1 0 0;
+    7 0.0017170125 auto auto 1 0 0;
+    13 0.0017170125 auto auto 1 0 0;
+    25 0.0017170125 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightLeg 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.20009691 auto auto 1 0 0;
+    7 -0.20009691 auto auto 1 0 0;
+    13 -0.20009691 auto auto 1 0 0;
+    25 -0.20009691 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightUpLeg 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -10.135989 auto auto 1 0 0;
+    7 -10.135989 auto auto 1 0 0;
+    13 -10.135989 auto auto 1 0 0;
+    25 -10.135989 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightUpLeg 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 2.0125843 auto auto 1 0 0;
+    7 2.0125843 auto auto 1 0 0;
+    13 2.0125843 auto auto 1 0 0;
+    25 2.0125843 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightUpLeg 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.032114109 auto auto 1 0 0;
+    7 0.032114109 auto auto 1 0 0;
+    13 0.032114109 auto auto 1 0 0;
+    25 0.032114109 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightArm 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 14.162365 auto auto 1 0 0;
+    7 0.00018251531 auto auto 1 0 0;
+    10 -8.8511816 auto auto 1 0 0;
+    13 -14.162 auto auto 1 0 0;
+    22 9.736683 auto auto 1 0 0;
+    25 14.162365 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightArm 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -5.3574923 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 11.03522 auto auto 1 0 0;
+    13 -11.857365 auto auto 1 0 0;
+    22 11.169342 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightArm 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    22 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightForeArm 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightForeArm 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightForeArm 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftShoulderEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.51136174 auto auto 1 0 0;
+    7 -0.51136175 auto auto 1 0 0;
+    13 -0.51136175 auto auto 1 0 0;
+    25 -0.51136175 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftShoulderEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 6.416334 auto auto 1 0 0;
+    7 6.416334 auto auto 1 0 0;
+    13 6.416334 auto auto 1 0 0;
+    25 6.416334 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftShoulderEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.05201853 auto auto 1 0 0;
+    7 -0.05201853 auto auto 1 0 0;
+    13 -0.05201853 auto auto 1 0 0;
+    25 -0.05201853 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_LeftShoulderEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.79404235 auto auto 1 0 0;
+    7 0.79404235 auto auto 1 0 0;
+    13 0.79404235 auto auto 1 0 0;
+    25 0.79404235 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_LeftShoulderEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 40.717255 auto auto 1 0 0;
+    7 40.717255 auto auto 1 0 0;
+    13 40.717255 auto auto 1 0 0;
+    25 40.717255 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_LeftShoulderEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 22.461342 auto auto 1 0 0;
+    7 22.461342 auto auto 1 0 0;
+    13 22.461342 auto auto 1 0 0;
+    25 22.461342 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftForeArm 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftForeArm 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftForeArm 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftArm 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -32.163733 auto auto 1 0 0;
+    7 0.00013371183 auto auto 1 0 0;
+    10 20.10255 auto auto 1 0 0;
+    13 32.164 auto auto 1 0 0;
+    22 -22.112524 auto auto 1 0 0;
+    25 -32.163733 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftArm 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -5.3574923 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 7.9707651 auto auto 1 0 0;
+    13 -11.857365 auto auto 1 0 0;
+    22 11.169342 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftArm 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    10 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    22 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftWristEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.5663099 auto auto 1 0 0;
+    7 0.56630986 auto auto 1 0 0;
+    13 0.56630986 auto auto 1 0 0;
+    25 0.56630986 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftWristEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -6.4489416 auto auto 1 0 0;
+    7 -6.4489412 auto auto 1 0 0;
+    13 -6.4489412 auto auto 1 0 0;
+    25 -6.4489412 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftWristEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.079006538 auto auto 1 0 0;
+    7 -0.079006532 auto auto 1 0 0;
+    13 -0.079006532 auto auto 1 0 0;
+    25 -0.079006532 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_LeftWristEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.93824029 auto auto 1 0 0;
+    7 0.93824029 auto auto 1 0 0;
+    13 0.93824029 auto auto 1 0 0;
+    25 0.93824029 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_LeftWristEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 39.03294 auto auto 1 0 0;
+    7 39.03294 auto auto 1 0 0;
+    13 39.03294 auto auto 1 0 0;
+    25 39.03294 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_LeftWristEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 37.383453 auto auto 1 0 0;
+    7 37.383453 auto auto 1 0 0;
+    13 37.383453 auto auto 1 0 0;
+    25 37.383453 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_LeftElbowEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.57076258 auto auto 1 0 0;
+    7 0.57076258 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_LeftElbowEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -6.4489668 auto auto 1 0 0;
+    7 -6.4489669 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_LeftElbowEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.079470323 auto auto 1 0 0;
+    7 -0.079470323 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_LeftElbowEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.83428097 auto auto 1 0 0;
+    7 0.83428097 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_LeftElbowEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 40.212841 auto auto 1 0 0;
+    7 40.212841 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_LeftElbowEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 26.945427 auto auto 1 0 0;
+    7 26.945427 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightElbowEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.013088188 auto auto 1 0 0;
+    7 0.013088188 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightElbowEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.15879178 auto auto 1 0 0;
+    7 -0.15879178 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightElbowEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.0011611462 auto auto 1 0 0;
+    7 -0.0011611462 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_RightElbowEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.578264 auto auto 1 0 0;
+    7 0.578264 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_RightElbowEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 40.706829 auto auto 1 0 0;
+    7 40.706829 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_RightElbowEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -28.151012 auto auto 1 0 0;
+    7 -28.151012 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightShoulderEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 2.7435127 auto auto 1 0 0;
+    7 2.7435126 auto auto 1 0 0;
+    13 2.7435126 auto auto 1 0 0;
+    25 2.7435126 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightShoulderEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.1372223 auto auto 1 0 0;
+    7 0.1372223 auto auto 1 0 0;
+    13 0.1372223 auto auto 1 0 0;
+    25 0.1372223 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightShoulderEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 1.3591126 auto auto 1 0 0;
+    7 1.3591125 auto auto 1 0 0;
+    13 1.3591126 auto auto 1 0 0;
+    25 1.3591126 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_RightShoulderEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.79404235 auto auto 1 0 0;
+    7 0.79404235 auto auto 1 0 0;
+    13 0.79404235 auto auto 1 0 0;
+    25 0.79404235 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_RightShoulderEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 40.71772 auto auto 1 0 0;
+    7 40.71772 auto auto 1 0 0;
+    13 40.71772 auto auto 1 0 0;
+    25 40.71772 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_RightShoulderEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -23.644163 auto auto 1 0 0;
+    7 -23.644163 auto auto 1 0 0;
+    13 -23.644163 auto auto 1 0 0;
+    25 -23.644163 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_RightWristEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.0097420712 auto auto 1 0 0;
+    7 0.0097420709 auto auto 1 0 0;
+    13 0.009742071 auto auto 1 0 0;
+    25 0.009742071 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_RightWristEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.15875013 auto auto 1 0 0;
+    7 0.15875013 auto auto 1 0 0;
+    13 0.15875013 auto auto 1 0 0;
+    25 0.15875013 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_RightWristEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.0011561897 auto auto 1 0 0;
+    7 0.0011561897 auto auto 1 0 0;
+    13 0.0011561897 auto auto 1 0 0;
+    25 0.0011561897 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_RightWristEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.58063149 auto auto 1 0 0;
+    7 0.58063149 auto auto 1 0 0;
+    13 0.58063149 auto auto 1 0 0;
+    25 0.58063149 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_RightWristEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 40.677715 auto auto 1 0 0;
+    7 40.677715 auto auto 1 0 0;
+    13 40.677715 auto auto 1 0 0;
+    25 40.677715 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_RightWristEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -38.655869 auto auto 1 0 0;
+    7 -38.655869 auto auto 1 0 0;
+    13 -38.655869 auto auto 1 0 0;
+    25 -38.655869 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_ChestEndEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_ChestEndEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_ChestEndEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_ChestEndEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.79404259 auto auto 1 0 0;
+    7 0.79404259 auto auto 1 0 0;
+    13 0.79404259 auto auto 1 0 0;
+    25 0.79404259 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_ChestEndEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 40.717487 auto auto 1 0 0;
+    7 40.717487 auto auto 1 0 0;
+    13 40.717487 auto auto 1 0 0;
+    25 40.717487 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_ChestEndEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.59141064 auto auto 1 0 0;
+    7 -0.59141064 auto auto 1 0 0;
+    13 -0.59141064 auto auto 1 0 0;
+    25 -0.59141064 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_Hips 0 3 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_Hips 0 3 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_Hips 0 3 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_Hips 0 3 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -1.9409504 auto auto 1 0 0;
+    7 -1.9409504 auto auto 1 0 0;
+    13 -1.9409504 auto auto 1 0 0;
+    25 -1.9409504 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_Hips 0 3 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 21.430927 auto auto 1 0 0;
+    7 21.430927 auto auto 1 0 0;
+    13 21.430927 auto auto 1 0 0;
+    25 21.430927 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_Hips 0 3 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.5370524 auto auto 1 0 0;
+    7 -0.5370524 auto auto 1 0 0;
+    13 -0.5370524 auto auto 1 0 0;
+    25 -0.5370524 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_Spine1 0 3 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_Spine1 0 3 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_Spine1 0 3 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_Neck 0 1 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.0046876831 auto auto 1 0 0;
+    7 -0.0046876831 auto auto 1 0 0;
+    13 -0.0046876831 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_Neck 0 1 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_Neck 0 1 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateZ rotateZ QuickRigCharacter_Ctrl_HeadEffector 0 0 0;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.0046848031 auto auto 1 0 0;
+    7 -0.0046848031 auto auto 1 0 0;
+    13 -0.0046848031 auto auto 1 0 0;
+    25 -0.0046848031 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateY rotateY QuickRigCharacter_Ctrl_HeadEffector 0 0 1;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim rotate.rotateX rotateX QuickRigCharacter_Ctrl_HeadEffector 0 0 2;
+animData {
+  input time;
+  output angular;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0 auto auto 1 0 0;
+    7 0 auto auto 1 0 0;
+    13 0 auto auto 1 0 0;
+    25 0 auto auto 1 0 0;
+  }
+}
+anim translate.translateZ translateZ QuickRigCharacter_Ctrl_HeadEffector 0 0 3;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 0.24944806 auto auto 1 0 0;
+    7 0.24944806 auto auto 1 0 0;
+    13 0.24944806 auto auto 1 0 0;
+    25 0.24944806 auto auto 1 0 0;
+  }
+}
+anim translate.translateY translateY QuickRigCharacter_Ctrl_HeadEffector 0 0 4;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 65.655918 auto auto 1 0 0;
+    7 65.655918 auto auto 1 0 0;
+    13 65.655918 auto auto 1 0 0;
+    25 65.655918 auto auto 1 0 0;
+  }
+}
+anim translate.translateX translateX QuickRigCharacter_Ctrl_HeadEffector 0 0 5;
+animData {
+  input time;
+  output linear;
+  weighted 0;
+  preInfinity constant;
+  postInfinity constant;
+  keys {
+    1 -0.5371634 auto auto 1 0 0;
+    7 -0.5371634 auto auto 1 0 0;
+    13 -0.5371634 auto auto 1 0 0;
+    25 -0.5371634 auto auto 1 0 0;
+  }
+}
+anim Cube 0 2 0;
+anim CubeShape 1 0 0;
+anim CubeShapeOrig 1 0 0;

@@ -34,3 +34,10 @@ https://lahmia.itch.io/low-rez-cash
 Attribution: CC0 (Public Domain)
 
 
+Simple Skybox
+https://godotengine.org/asset-library/asset/165
+Copyright © 2023 The Godot Engine community - MIT licensed
+
+Cloudy Skyboxes
+https://opengameart.org/content/cloudy-skyboxes
+cc0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -39,6 +39,9 @@ font_data = ExtResource( 15 )
 
 [sub_resource type="Theme" id=6]
 default_font = SubResource( 5 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 50, 7.731, 2.129 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -922,7 +925,7 @@ transform = Transform( -0.0611541, 0, 0.99813, 0, 1, 0, -0.99813, 0, -0.0611541,
 transform = Transform( -0.0611541, 0, 0.99813, 0, 1, 0, -0.99813, 0, -0.0611541, -43.3136, 0, 10.1874 )
 
 [node name="tree303" parent="tree09" instance=ExtResource( 5 )]
-transform = Transform( -0.0611541, 0, 0.99813, 0, 1, 0, -0.99813, 0, -0.0611541, -40.7364, 0, 6.58602 )
+transform = Transform( -0.0611541, 0, 0.99813, 0, 1, 0, -0.99813, 0, -0.0611541, -40.7364, 0, 6.58603 )
 
 [node name="tree304" parent="tree09" instance=ExtResource( 5 )]
 transform = Transform( 0.185769, 0, 0.982595, 0, 1, 0, -0.982595, 0, 0.185769, -40.8708, 0, 8.58497 )
@@ -1183,7 +1186,7 @@ transform = Transform( 0.120917, 0, 0.992663, 0, 1, 0, -0.992663, 0, 0.120917, -
 transform = Transform( 0.0551603, 0.3415, -0.938262, 0, 0.939693, 0.34202, 0.998477, -0.0188651, 0.0518333, 74.9343, 10.7468, 41.9034 )
 
 [node name="Camera" type="Camera" parent="Player/Target/Pivot"]
-transform = Transform( 0.837203, 0.143938, -0.52761, -0.20275, 0.977685, -0.0549959, 0.50792, 0.153016, 0.847704, -32.8759, -6.79985, 9.88971 )
+transform = Transform( 0.913946, 0.159859, -0.373024, -0.160769, 0.986569, 0.0288927, 0.372633, 0.0335655, 0.927371, -26.7098, -6.39715, 6.79548 )
 fov = 38.6
 script = ExtResource( 14 )
 
@@ -1237,5 +1240,32 @@ margin_bottom = 28.0
 custom_colors/font_color = Color( 0.192157, 0.168627, 0.168627, 1 )
 text = "Money: 0"
 script = ExtResource( 16 )
+
+[node name="Bounds" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Bounds"]
+transform = Transform( 0.9993, 0, 0.0374111, 0, 1, 0, -0.0374111, 0, 0.9993, 105.944, 0, 51.5751 )
+shape = SubResource( 7 )
+
+[node name="Bounds2" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 68.9897 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bounds2"]
+transform = Transform( 0.9993, 0, 0.0374111, 0, 1, 0, -0.0374111, 0, 0.9993, 105.944, 0, 51.5751 )
+shape = SubResource( 7 )
+
+[node name="Bounds3" type="StaticBody" parent="."]
+transform = Transform( -0.0946469, 0, -0.995511, 0, 1, 0, 0.995511, 0, -0.0946469, 125.396, 0, -2.518 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bounds3"]
+transform = Transform( 0.997438, 0, 0.0715497, 0, 1, 0, -0.0715497, 0, 0.997438, 105.559, 0, 47.5198 )
+shape = SubResource( 7 )
+
+[node name="Bounds4" type="StaticBody" parent="."]
+transform = Transform( -0.0946469, 0, -0.995511, 0, 1, 0, 0.995511, 0, -0.0946469, 216.202, 0, -2.518 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bounds4"]
+transform = Transform( 0.981645, 0, 0.190723, 0, 1, 0, -0.190723, 0, 0.981645, 106.632, 0, 58.8126 )
+shape = SubResource( 7 )
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
