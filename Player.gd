@@ -4,7 +4,7 @@ export var bounce_impulse = 16
 
 # How fast the player moves in meters per second.
 #export var speed = 5.2
-export var speed = 12
+export var speed = 5.2
 # The downward acceleration when in the air, in meters per second squared.
 export var fall_acceleration = 75
 export var jump_impulse = 20
