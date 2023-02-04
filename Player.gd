@@ -3,7 +3,8 @@ extends KinematicBody
 export var bounce_impulse = 16
 
 # How fast the player moves in meters per second.
-export var speed = 5.2
+#export var speed = 5.2
+export var speed = 12
 # The downward acceleration when in the air, in meters per second squared.
 export var fall_acceleration = 75
 export var jump_impulse = 20
@@ -26,7 +27,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_forward"):
 		direction.z += 1
 		$Pivot/farmer_walk_idle_lasso/AnimationPlayer.play("Walk")
-	if Input.is_action_pressed("jump"):
+	if velocity.y > 1 or is_on_floor() == false:
 		$Pivot/farmer_walk_idle_lasso/AnimationPlayer.play("Lasso")
 	if direction != Vector3.ZERO:
 		direction = direction.normalized()

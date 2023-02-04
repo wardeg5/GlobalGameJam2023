@@ -1,0 +1,13 @@
+[remap]
+
+importer="lithtech.abc.import"
+type="PackedScene"
+path="res://.import/seedling_walk.abc-9ad8e3507dfea4cdcb9e32458b8135a0.tscn"
+
+[deps]
+
+source_file="res://art/models/abc/seedling_walk.abc"
+dest_files=[ "res://.import/seedling_walk.abc-9ad8e3507dfea4cdcb9e32458b8135a0.tscn" ]
+
+[params]
+

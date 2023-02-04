@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -11,7 +11,6 @@
 [ext_resource path="res://art/ground_texture/grassmix/Ground037_1K_Color.jpg" type="Texture" id=9]
 [ext_resource path="res://Main.gd" type="Script" id=11]
 [ext_resource path="res://Mob.tscn" type="PackedScene" id=12]
-[ext_resource path="res://house2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Camera.gd" type="Script" id=14]
 [ext_resource path="res://fonts/Montserrat-Medium.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://ScoreLabel.gd" type="Script" id=16]
@@ -1179,6 +1178,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7549, 0, 0.541428 )
 [node name="house1" parent="." instance=ExtResource( 6 )]
 transform = Transform( 0.963462, 0, 0.267844, 0, 1, 0, -0.267844, 0, 0.963462, 109.594, 0, 45.8502 )
 
+[node name="house3" parent="." instance=ExtResource( 6 )]
+transform = Transform( -0.99947, 0, -0.0325449, 0, 1, 0, 0.0325449, 0, -0.99947, 96.8862, 0, 126.791 )
+
 [node name="Cylinders" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 85.4924, 0, 62.5839 )
 visible = false
@@ -1206,9 +1208,6 @@ material/0 = SubResource( 3 )
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
-
-[node name="house2" parent="." instance=ExtResource( 13 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 97.0541, -4.76837e-07, 121.736 )
 
 [node name="SpawnPath" type="Path" parent="."]
 curve = SubResource( 4 )

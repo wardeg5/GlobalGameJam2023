@@ -22,13 +22,18 @@ func initialize(start_position, player_position):
 	velocity = velocity.rotated(Vector3.UP, rotation.y)
 
 
-func _on_VisibilityNotifier_screen_exited():
-	queue_free()
+#func _on_VisibilityNotifier_screen_exited():
+	#queue_free()
 
 func squash():
+	get_node("CollisionShape").disabled = true
 	emit_signal("squashed")
 	# kill mob
 	#queue_free()
 	velocity.y=0
 	velocity.x=0
 	velocity.z=0
+	#set_rotation(Vector3(0,0,0))
+	$Pivot/seedling_v2.rotate_x(-120)
+	translation.y -= 0.1
+
