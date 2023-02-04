@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://art/textures/houses/house1_tex2.png" type="Texture" id=1]
 [ext_resource path="res://art/textures/houses/house1_tex3.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://art/textures/houses/house2_tex1.png" type="Texture" id=4]
 [ext_resource path="res://art/textures/houses/house1_tex1.png" type="Texture" id=5]
 [ext_resource path="res://art/models/glb/house1.material" type="Material" id=6]
+[ext_resource path="res://shaders/psx.shader" type="Shader" id=7]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "house1_house1"
@@ -22,8 +23,16 @@ surfaces/0 = {
 "vertex_count": 1073
 }
 
-[sub_resource type="SpatialMaterial" id=8]
-albedo_texture = ExtResource( 5 )
+[sub_resource type="ShaderMaterial" id=15]
+shader = ExtResource( 7 )
+shader_param/snapRes = 8.0
+shader_param/roughness = 1.0
+shader_param/specular = 0.1
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/uv_offset = Vector2( 0, 0 )
+shader_param/light_intensity = 0.3
+shader_param/transparent = false
+shader_param/albedoTex = ExtResource( 1 )
 
 [sub_resource type="ArrayMesh" id=2]
 resource_name = "house1_house1_door1"
@@ -137,7 +146,7 @@ albedo_texture = ExtResource( 5 )
 
 [node name="house1" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
-material/0 = SubResource( 8 )
+material/0 = SubResource( 15 )
 
 [node name="house1_door1" type="MeshInstance" parent="house1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, 4.9 )

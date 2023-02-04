@@ -6,7 +6,7 @@
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
-shader_param/snapRes = 50.0
+shader_param/snapRes = 40.0
 shader_param/roughness = 1.0
 shader_param/specular = 0.1
 shader_param/uv_scale = Vector2( 1, 1 )
