@@ -28,4 +28,7 @@ func _on_VisibilityNotifier_screen_exited():
 func squash():
 	emit_signal("squashed")
 	# kill mob
-	queue_free()
+	#queue_free()
+	velocity.y=0
+	velocity.x=0
+	velocity.z=0

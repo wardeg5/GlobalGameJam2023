@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pk_-_root_roundup_shop_theme_-_lowbit_bossa.ogg-0e5c8192cbb65dd89338e199e71e2e8f.oggstr"
+
+[deps]
+
+source_file="res://sound/pk_-_root_roundup_shop_theme_-_lowbit_bossa.ogg"
+dest_files=[ "res://.import/pk_-_root_roundup_shop_theme_-_lowbit_bossa.ogg-0e5c8192cbb65dd89338e199e71e2e8f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
