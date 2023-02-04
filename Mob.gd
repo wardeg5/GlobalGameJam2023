@@ -3,16 +3,17 @@ signal squashed
 extends KinematicBody
 
 # Minimum speed of the mob in meters per second.
-export var min_speed = 3
+export var min_speed = 2
 # Maximum speed of the mob in meters per second.
-export var max_speed = 6
+export var max_speed = 3
 
 var velocity = Vector3.ZERO
 
 
 func _physics_process(_delta):
 	move_and_slide(velocity)
-
+	if velocity.x >0:
+		$AnimationPlayer.play("Walk")
 func initialize(start_position, player_position):
 	look_at_from_position(start_position, player_position, Vector3.UP)
 	rotate_y(rand_range(-PI / 3, PI / 4	))
@@ -35,7 +36,7 @@ func squash():
 	velocity.z=0
 	#set_rotation(Vector3(0,0,0))
 	$metarig.rotate_x(-120)
-	translation.y -= 0.1
-
+	#translation.y -= 0.1
+	$AnimationPlayer.play("Fall")
 
 

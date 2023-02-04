@@ -778,8 +778,10 @@ transform = Transform( -1, -2.44797e-07, -8.23056e-07, 5.16786e-08, 0.939608, -0
 transform = Transform( 2.38419e-07, -1, -5.81145e-07, -0.899011, 0, -0.437926, 0.437926, 6.4075e-07, -0.899011, 0.0156716, -0.00182288, 0.0307837 )
 
 [node name="metarig" type="Spatial" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 
 [node name="Skeleton" type="Skeleton" parent="metarig"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 bones/0/name = "spine"
 bones/0/parent = -1
 bones/0/rest = Transform( 1, 0, 0, 0, 0.968339, -0.249639, 0, 0.249639, 0.968339, -2.71567e-10, 0.180089, -0.0214287 )
@@ -917,6 +919,7 @@ bones/26/enabled = true
 bones/26/bound_children = [  ]
 
 [node name="Cube" type="MeshInstance" parent="metarig/Skeleton"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 mesh = SubResource( 1 )
 skin = SubResource( 2 )
 
