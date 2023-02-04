@@ -34,6 +34,8 @@ func squash():
 	velocity.x=0
 	velocity.z=0
 	#set_rotation(Vector3(0,0,0))
-	$Pivot/seedling_v2.rotate_x(-120)
+	$metarig.rotate_x(-120)
 	translation.y -= 0.1
+
+
 

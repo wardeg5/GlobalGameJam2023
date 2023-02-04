@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Mob.tscn" type="PackedScene" id=1]
+
+[sub_resource type="GDScript" id=2]
+script/source = "signal squashed
+
+extends KinematicBody
+
+# Minimum speed of the mob in meters per second.
+export var min_speed = 3
+# Maximum speed of the mob in meters per second.
+export var max_speed = 6
+
+var velocity = Vector3.ZERO
+
+
+func _physics_process(_delta):
+	move_and_slide(velocity)
+
+func initialize(start_position, player_position):
+	look_at_from_position(start_position, player_position, Vector3.UP)
+	rotate_y(rand_range(-PI / 3, PI / 4	))
+
+	var random_speed = rand_range(min_speed, max_speed)
+	velocity = Vector3.FORWARD * random_speed
+	velocity = velocity.rotated(Vector3.UP, rotation.y)
+
+
+#func _on_VisibilityNotifier_screen_exited():
+	#queue_free()
+
+func squash():
+	get_node(\"CollisionShape\").disabled = true
+	emit_signal(\"squashed\")
+	# kill mob
+	#queue_free()
+	velocity.y=0
+	velocity.x=0
+	velocity.z=0
+	#set_rotation(Vector3(0,0,0))
+	
+	.rotate_x(-120)
+	translation.y -= 0.1
+
+"
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.269702, 0.346736, 0.200161 )
+
+[node name="Mob_old" type="KinematicBody"]
+collision_layer = 2
+collision_mask = 2
+script = SubResource( 2 )
+
+[node name="Pivot" type="Spatial" parent="."]
+
+[node name="seedling_walk_idle_fall" parent="Pivot" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.379006, 0.048722 )
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier" type="VisibilityNotifier" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.349625, 0 )
+aabb = AABB( -0.25289, -0.288491, -0.29899, 0.505779, 0.576982, 0.59798 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="screen_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_screen_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://art/ground_texture/rocks/Rocks007_1K_Color.jpg" type="Texture" id=7]
 [ext_resource path="res://art/ground_texture/dirt/Ground023_1K_Color.jpg" type="Texture" id=8]
 [ext_resource path="res://art/ground_texture/grassmix/Ground037_1K_Color.jpg" type="Texture" id=9]
-[ext_resource path="res://Seedling.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Main.gd" type="Script" id=11]
 [ext_resource path="res://Mob.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Camera.gd" type="Script" id=14]
@@ -280,12 +279,6 @@ textures = [ [ ExtResource( 4 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 1, 0, 0.329412, 1 )
 
-[sub_resource type="Curve3D" id=4]
-_data = {
-"points": PoolVector3Array(  ),
-"tilts": PoolRealArray(  )
-}
-
 [sub_resource type="DynamicFont" id=5]
 size = 22
 font_data = ExtResource( 15 )
@@ -297,6 +290,12 @@ default_font = SubResource( 5 )
 extents = Vector3( 50, 7.731, 2.129 )
 
 [sub_resource type="CylinderShape" id=8]
+
+[sub_resource type="Curve3D" id=10]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 74.0139, 0, 57.6842, 0, 0, 0, 0, 0, 0, 138.225, 0, 55.7186, 0, 0, 0, 0, 0, 0, 141.501, 0, 112.395, 0, 0, 0, 0, 0, 0, 74.3415, 0, 115.671, 0, 0, 0, 0, 0, 0, 74.0139, 0, 57.6842 ),
+"tilts": PoolRealArray( 0, 0, 0, 0, 0 )
+}
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -1462,12 +1461,6 @@ material/0 = SubResource( 3 )
 wait_time = 0.5
 autostart = true
 
-[node name="SpawnPath" type="Path" parent="."]
-curve = SubResource( 4 )
-
-[node name="SpawnLocation" type="PathFollow" parent="SpawnPath"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 71.5941, 0, 121.705 )
-
 [node name="UserInterface" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
@@ -1535,7 +1528,10 @@ transform = Transform( 0.913946, 0.159858, -0.373024, -0.160769, 0.986568, 0.028
 fov = 38.6
 script = ExtResource( 14 )
 
-[node name="seedling_walk_idle_fall" parent="." instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 106.46, 9.53674e-07, 63.7453 )
+[node name="SpawnPath" type="Path" parent="."]
+curve = SubResource( 10 )
+
+[node name="SpawnLocation" type="PathFollow" parent="SpawnPath"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74.0139, 0, 57.6842 )
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
