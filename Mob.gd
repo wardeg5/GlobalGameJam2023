@@ -57,6 +57,7 @@ func _on_timer_timeout():
 		print('veggie time!')
 		$metarig/Skeleton/Cube.visible = false
 		$MeshInstance/Carrot.visible = true
+		$mobPop.play()
 	else:
 		#pop back up and carry on
 		$metarig.rotate_x(120)

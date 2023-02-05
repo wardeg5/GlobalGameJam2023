@@ -12,7 +12,7 @@ func _on_NextDayButton_pressed():
 	$"../Roundtimer/Control/Timer".paused = false
 	$".".hide()
 	$"../MainTheme".play()
-
+	
 func _on_StoreMenu_ready():
 	$StoreMenu.hide()
 
