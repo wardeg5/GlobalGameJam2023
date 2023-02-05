@@ -1,13 +1,109 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://art/textures/main_menu.png" type="Texture" id=2]
 [ext_resource path="res://sound/title_loop.ogg" type="AudioStream" id=3]
+[ext_resource path="res://sound/buy.ogg" type="AudioStream" id=4]
+[ext_resource path="res://fonts/Montserrat-Medium.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+font_data = ExtResource( 5 )
+
+[sub_resource type="Theme" id=4]
+default_font = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 6
+font_data = ExtResource( 5 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+
+[node name="HowToPlay" type="RichTextLabel" parent="."]
+visible = false
+margin_top = 236.0
+margin_right = 210.0
+margin_bottom = 299.0
+text = "Controls: Arrow Keys or WASD
+Spacebar to Jump
+Goal: Jump on the seedlings while they are over dirt!"
+
+[node name="Credit" type="RichTextLabel" parent="."]
+visible = false
+margin_left = 254.0
+margin_top = 4.0
+margin_right = 540.0
+margin_bottom = 364.0
+theme = SubResource( 4 )
+text = "Programming by:
+Warren Degenhardt - 
+https://github.com/wardeg5
+
+Aaron Minnick  - https://github.com/aaronminnick
+
+3D Modeling By:
+Lily Owen -  https://yestea2.github.io/
+
+3D Animation By:
+Haylee Wagner https://www.artstation.com/hayleewagner
+
+Music and Sound By:
+Peter Karman - ptrkrmn.com - @ptrkrmn
+"
+
+[node name="Assets" type="Label" parent="."]
+visible = false
+margin_top = 10.0
+margin_right = 335.0
+margin_bottom = 480.0
+theme = SubResource( 2 )
+text = "Ground Textures:
+https://docs.ambientcg.com/books/website-licensing/page/license-information
+Creative Commons CC0 1.0 Universal License.
+Credit Text: Created using assets from ambientCG.com (CC0).
+
+Retro PSX Nature pack:
+https://elegantcrow.itch.io/retro-psx-nature-pack
+The models on this pack are under CC0 License.
+Textures come from AmbientCG.com.
+Images come from Pixabay.
+Credit is not mandatory but greatly appreciated.
+Credit Text: Created using assets from ambientCG.com (CC0).
+
+Retro House Pack:
+https://elegantcrow.itch.io/retro-house-pack
+The models on this pack are under the CC0 license
+Textures come from AmbientCG.com.
+Additional textures com from Pixabay, Pexels and Unsplash.
+Credit Text: Created using assets from ambientCG.com (CC0).
+
+PSX Forest Asset Collection (by Stark Crafts)
+https://starkcrafts.itch.io/psx-forest-asset-collection-by-starkcrafts
+
+PS1 Style Crate
+https://retroarchy.itch.io/psx-style-crate
+Licence: CC0
+
+Low Rez Cash
+https://lahmia.itch.io/low-rez-cash
+Attribution: CC0 (Public Domain)
+
+
+Simple Skybox
+https://godotengine.org/asset-library/asset/165
+Copyright © 2023 The Godot Engine community - MIT licensed
+
+Farmer: https://maximumdamage.itch.io/farmer
+
+Cloudy Skyboxes
+https://opengameart.org/content/cloudy-skyboxes
+cc0"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_top = 1.0
@@ -18,14 +114,26 @@ margin_right = 59.0
 margin_bottom = -89.0
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_right = 41.0
+margin_right = 89.0
 margin_bottom = 20.0
 text = "Start"
 
-[node name="QuitButton" type="Button" parent="VBoxContainer"]
+[node name="HowTo" type="Button" parent="VBoxContainer"]
 margin_top = 24.0
-margin_right = 41.0
+margin_right = 89.0
 margin_bottom = 44.0
+text = "Instructions"
+
+[node name="Credits" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 89.0
+margin_bottom = 68.0
+text = "Credits"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+margin_top = 72.0
+margin_right = 89.0
+margin_bottom = 92.0
 text = "Quit"
 
 [node name="MainMenu" type="Sprite" parent="VBoxContainer"]
@@ -37,5 +145,11 @@ texture = ExtResource( 2 )
 stream = ExtResource( 3 )
 autoplay = true
 
+[node name="MenuButton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 5.157
+
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HowTo" to="." method="_on_HowTo_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

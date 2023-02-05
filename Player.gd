@@ -44,6 +44,7 @@ func _physics_process(delta):
 	velocity.y -= fall_acceleration * delta
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y += jump_impulse
+		$jump.play()
 	velocity = move_and_slide(velocity, Vector3.UP)
 	for index in range(get_slide_count()):
 		# We check every collision that occurred this frame.
@@ -55,4 +56,5 @@ func _physics_process(delta):
 			if Vector3.UP.dot(collision.normal) > 0.1:
 				# If so, we squash it and bounce.
 				mob.squash()
+				$smash.play()
 				velocity.y = bounce_impulse

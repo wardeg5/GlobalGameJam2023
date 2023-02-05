@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -21,6 +21,9 @@
 [ext_resource path="res://NightMenu.gd" type="Script" id=19]
 [ext_resource path="res://sound/pk_-_root_roundup_shop_theme_-_lowbit_bossa.ogg" type="AudioStream" id=20]
 [ext_resource path="res://sound/pk_-_root_roundup_main_theme_-_lowbit_jungle_v1.ogg" type="AudioStream" id=21]
+[ext_resource path="res://sound/smash.ogg" type="AudioStream" id=22]
+[ext_resource path="res://sound/pop.ogg" type="AudioStream" id=23]
+[ext_resource path="res://sound/jump.ogg" type="AudioStream" id=24]
 
 [sub_resource type="Shader" id=9]
 code = "shader_type spatial;
@@ -315,6 +318,24 @@ font_data = ExtResource( 15 )
 
 [sub_resource type="Theme" id=14]
 default_font = SubResource( 13 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 5.373, 1, 5.354 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 11.3, 1, 6.67 )
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 6.29333, 1, 4.82297 )
+
+[sub_resource type="BoxShape" id=18]
+extents = Vector3( 5.8, 1, 4.3 )
+
+[sub_resource type="BoxShape" id=19]
+extents = Vector3( 7.63033, 1, 6.09851 )
+
+[sub_resource type="BoxShape" id=21]
+extents = Vector3( 9.3, 1, 5.2 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -1547,6 +1568,12 @@ transform = Transform( 0.913946, 0.159858, -0.373024, -0.160769, 0.986568, 0.028
 fov = 38.6
 script = ExtResource( 14 )
 
+[node name="jump" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 24 )
+
+[node name="smash" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 22 )
+
 [node name="SpawnPath" type="Path" parent="."]
 curve = SubResource( 10 )
 
@@ -1609,24 +1636,27 @@ margin_right = 299.0
 margin_bottom = 460.0
 
 [node name="SpeedButton" type="Button" parent="NightMenu/StoreMenu/VBoxContainer"]
+visible = false
 margin_right = 114.0
 margin_bottom = 20.0
 text = "Walk Speed +1"
 
 [node name="GrowButton" type="Button" parent="NightMenu/StoreMenu/VBoxContainer"]
+visible = false
 margin_top = 24.0
 margin_right = 114.0
 margin_bottom = 44.0
 text = "Growth Time +1"
 
 [node name="NextDayButton" type="Button" parent="NightMenu"]
-margin_left = 251.0
+margin_left = 198.0
 margin_top = 371.0
-margin_right = 291.0
+margin_right = 267.0
 margin_bottom = 391.0
 text = "Continue"
 
 [node name="StoreButton" type="Button" parent="NightMenu"]
+visible = false
 margin_left = 166.0
 margin_top = 371.0
 margin_right = 235.0
@@ -1638,6 +1668,57 @@ stream = ExtResource( 20 )
 
 [node name="MainTheme" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 21 )
+
+[node name="Dirt1" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt1"]
+transform = Transform( 1.53786, 0, -0.133331, 0, 1, 0, 0.20902, 0, 0.980981, 85.9, 0.992, 91.86 )
+shape = SubResource( 15 )
+
+[node name="Dirt2" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.6, 0.96, 92.3 )
+shape = SubResource( 16 )
+
+[node name="Dirt3" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 136.082, 0, 92.5648 )
+shape = SubResource( 17 )
+
+[node name="Dirt4" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 133.798, 0, 70.6376 )
+shape = SubResource( 18 )
+
+[node name="Dirt5" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 88.2521, 0, 68.1781 )
+shape = SubResource( 19 )
+
+[node name="Dirt6" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.279, 0, 70.2828 )
+shape = SubResource( 21 )
+
+[node name="pop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
 [connection signal="ready" from="Roundtimer/Control/Timer" to="Roundtimer/Control/CustomLabel" method="_on_Timer_ready"]
