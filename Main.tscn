@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -296,6 +296,24 @@ _data = {
 "points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 74.0139, 0, 57.6842, 0, 0, 0, 0, 0, 0, 138.225, 0, 55.7186, 0, 0, 0, 0, 0, 0, 141.501, 0, 112.395, 0, 0, 0, 0, 0, 0, 74.3415, 0, 115.671, 0, 0, 0, 0, 0, 0, 74.0139, 0, 57.6842 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0 )
 }
+
+[sub_resource type="BoxShape" id=11]
+extents = Vector3( 5.373, 1, 5.354 )
+
+[sub_resource type="BoxShape" id=12]
+extents = Vector3( 11.325, 1, 6.672 )
+
+[sub_resource type="BoxShape" id=13]
+extents = Vector3( 5.82064, 1, 4.38719 )
+
+[sub_resource type="BoxShape" id=14]
+extents = Vector3( 6.80757, 1, 5.30872 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 9.37715, 1, 5.20139 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 6.12676, 1, 4.39266 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -1533,5 +1551,45 @@ curve = SubResource( 10 )
 
 [node name="SpawnLocation" type="PathFollow" parent="SpawnPath"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74.0139, 0, 57.6842 )
+
+[node name="Dirt1" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt1"]
+transform = Transform( 1.5378, 0, -0.133401, 0, 1, 0, 0.209149, 0, 0.980856, 85.9032, 0.991908, 91.8639 )
+shape = SubResource( 11 )
+
+[node name="Dirt2" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.653, 0.964293, 92.3591 )
+shape = SubResource( 12 )
+
+[node name="Dirt3" type="Area" parent="." groups=["DirtAreas"]]
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 135.87, 0.87294, 92.5802 )
+shape = SubResource( 13 )
+
+[node name="Dirt4" type="Area" parent="." groups=["DirtAreas"]]
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt4"]
+transform = Transform( 0.969119, 0, -0.246593, 0, 1, 0, 0.246593, 0, 0.969119, 89.0022, 0.879822, 68.7721 )
+shape = SubResource( 14 )
+
+[node name="Dirt5" type="Area" parent="." groups=["DirtAreas"]]
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.333, 0.892895, 70.2746 )
+shape = SubResource( 15 )
+
+[node name="Dirt6" type="Area" parent="." groups=["DirtAreas"]]
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt6"]
+transform = Transform( 0.998937, 0, 0.0460953, 0, 1, 0, -0.0460953, 0, 0.998937, 134.092, 0.870056, 70.8793 )
+shape = SubResource( 16 )
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]

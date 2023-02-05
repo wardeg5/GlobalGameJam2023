@@ -9,15 +9,23 @@ export var max_speed = 3
 
 var velocity = Vector3.ZERO
 
+var dirts = []
+var inDirt = false
 
 func _physics_process(_delta):
 	move_and_slide(velocity)
 	if velocity.x >0:
 		$AnimationPlayer.play("Walk")
-func initialize(start_position, player_position):
+	inDirt = false
+	for dirt in dirts:
+		if dirt.overlaps_body(self):
+			inDirt = true
+			break
+
+func initialize(start_position, player_position, dirtAreas):
 	look_at_from_position(start_position, player_position, Vector3.UP)
 	rotate_y(rand_range(-PI / 3, PI / 4	))
-
+	dirts = dirtAreas
 	var random_speed = rand_range(min_speed, max_speed)
 	velocity = Vector3.FORWARD * random_speed
 	velocity = velocity.rotated(Vector3.UP, rotation.y)
@@ -28,7 +36,9 @@ func initialize(start_position, player_position):
 
 func squash():
 	get_node("CollisionShape").disabled = true
-	emit_signal("squashed")
+	print('in dirt:', inDirt)
+	if inDirt:
+		emit_signal("squashed")
 	# kill mob
 	#queue_free()
 	velocity.y=0
