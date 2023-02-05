@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://art/ground_texture/rocks/Rocks007_1K_Color.jpg" type="Texture" id=7]
 [ext_resource path="res://art/ground_texture/dirt/Ground023_1K_Color.jpg" type="Texture" id=8]
 [ext_resource path="res://art/ground_texture/grassmix/Ground037_1K_Color.jpg" type="Texture" id=9]
+[ext_resource path="res://CustomLabel.gd" type="Script" id=10]
 [ext_resource path="res://Main.gd" type="Script" id=11]
 [ext_resource path="res://Mob.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Camera.gd" type="Script" id=14]
@@ -296,6 +297,13 @@ _data = {
 "points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 74.0139, 0, 57.6842, 0, 0, 0, 0, 0, 0, 138.225, 0, 55.7186, 0, 0, 0, 0, 0, 0, 141.501, 0, 112.395, 0, 0, 0, 0, 0, 0, 74.3415, 0, 115.671, 0, 0, 0, 0, 0, 0, 74.0139, 0, 57.6842 ),
 "tilts": PoolRealArray( 0, 0, 0, 0, 0 )
 }
+
+[sub_resource type="DynamicFont" id=11]
+size = 22
+font_data = ExtResource( 15 )
+
+[sub_resource type="Theme" id=12]
+default_font = SubResource( 11 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -1471,7 +1479,7 @@ margin_left = 16.0
 margin_top = 14.0
 margin_right = 75.0
 margin_bottom = 28.0
-custom_colors/font_color = Color( 0.192157, 0.168627, 0.168627, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Money: 0"
 script = ExtResource( 16 )
 
@@ -1534,4 +1542,27 @@ curve = SubResource( 10 )
 [node name="SpawnLocation" type="PathFollow" parent="SpawnPath"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 74.0139, 0, 57.6842 )
 
+[node name="Roundtimer" type="Node" parent="."]
+
+[node name="Control" type="Control" parent="Roundtimer"]
+margin_left = 171.0
+margin_right = 211.0
+margin_bottom = 40.0
+theme = SubResource( 12 )
+
+[node name="Timer" type="Timer" parent="Roundtimer/Control"]
+process_mode = 0
+wait_time = 200.0
+autostart = true
+
+[node name="CustomLabel" type="Label" parent="Roundtimer/Control"]
+margin_left = 159.0
+margin_top = 13.0
+margin_right = 303.0
+margin_bottom = 48.0
+text = "Time Left:"
+script = ExtResource( 10 )
+
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
+[connection signal="ready" from="Roundtimer/Control/Timer" to="Roundtimer/Control/CustomLabel" method="_on_Timer_ready"]
+[connection signal="timeout" from="Roundtimer/Control/Timer" to="Roundtimer/Control/CustomLabel" method="toggle_visibility"]
