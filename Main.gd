@@ -6,6 +6,8 @@ var dayCount = 0
 
 func _ready():
 	randomize()
+	$NightMenu.hide()
+	$MainTheme.play()
 
 
 func _on_MobTimer_timeout():

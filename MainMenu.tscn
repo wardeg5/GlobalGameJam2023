@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://art/textures/main_menu.png" type="Texture" id=2]
+[ext_resource path="res://sound/title_loop.ogg" type="AudioStream" id=3]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -31,6 +32,10 @@ text = "Quit"
 position = Vector2( 238, -107 )
 z_index = -1
 texture = ExtResource( 2 )
+
+[node name="TitleMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
