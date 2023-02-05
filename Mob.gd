@@ -12,7 +12,7 @@ var velocity = Vector3.ZERO
 
 func _physics_process(_delta):
 	move_and_slide(velocity)
-	if velocity.x >0:
+	if velocity.x !=0:
 		$AnimationPlayer.play("Walk")
 func initialize(start_position, player_position):
 	look_at_from_position(start_position, player_position, Vector3.UP)

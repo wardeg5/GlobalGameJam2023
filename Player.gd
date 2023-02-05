@@ -27,6 +27,8 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_forward"):
 		direction.z += 1
 		$Pivot/farmer_walk_idle_lasso/AnimationPlayer.play("Walk")
+	if Input.is_action_pressed("escape"):
+		get_tree().change_scene("res://MainMenu.tscn")
 	if velocity.y > 1 or is_on_floor() == false:
 		$Pivot/farmer_walk_idle_lasso/AnimationPlayer.play("Lasso")
 	if direction != Vector3.ZERO:
