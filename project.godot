@@ -27,7 +27,8 @@ _global_script_class_icons={
 [application]
 
 config/name="GlobalGameJame2023"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://MainMenu.tscn"
+boot_splash/image="res://art/textures/main_menu.png"
 config/icon="res://icon.png"
 
 [autoload]
