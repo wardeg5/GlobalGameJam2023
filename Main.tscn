@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://CustomLabel.gd" type="Script" id=10]
 [ext_resource path="res://Main.gd" type="Script" id=11]
 [ext_resource path="res://Mob.tscn" type="PackedScene" id=12]
+[ext_resource path="res://art/textures/night.jpg" type="Texture" id=13]
 [ext_resource path="res://Camera.gd" type="Script" id=14]
 [ext_resource path="res://fonts/Montserrat-Medium.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://ScoreLabel.gd" type="Script" id=16]
@@ -304,6 +305,13 @@ font_data = ExtResource( 15 )
 
 [sub_resource type="Theme" id=12]
 default_font = SubResource( 11 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 29
+font_data = ExtResource( 15 )
+
+[sub_resource type="Theme" id=14]
+default_font = SubResource( 13 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -1560,9 +1568,69 @@ margin_left = 159.0
 margin_top = 13.0
 margin_right = 303.0
 margin_bottom = 48.0
-text = "Time Left:"
+text = "Time Until Sunset:"
 script = ExtResource( 10 )
+
+[node name="NightMenu" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NightMenu"]
+margin_left = 73.0
+margin_top = -82.0
+margin_right = 113.0
+margin_bottom = -42.0
+
+[node name="Night" type="Sprite" parent="NightMenu/VBoxContainer"]
+position = Vector2( 208, 322 )
+scale = Vector2( 0.45, 0.45 )
+texture = ExtResource( 13 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="NightMenu"]
+margin_left = 151.0
+margin_top = 300.0
+margin_right = 411.0
+margin_bottom = 340.0
+theme = SubResource( 14 )
+text = "End of Day"
+
+[node name="StoreMenu" type="Control" parent="NightMenu"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NightMenu/StoreMenu"]
+margin_left = 185.0
+margin_top = 416.0
+margin_right = 299.0
+margin_bottom = 460.0
+
+[node name="Button" type="Button" parent="NightMenu/StoreMenu/VBoxContainer"]
+margin_right = 114.0
+margin_bottom = 20.0
+text = "Walk Speed +1"
+
+[node name="Button2" type="Button" parent="NightMenu/StoreMenu/VBoxContainer"]
+margin_top = 24.0
+margin_right = 114.0
+margin_bottom = 44.0
+text = "Growth Time +1"
+
+[node name="StoreButton" type="Button" parent="NightMenu"]
+margin_left = 251.0
+margin_top = 371.0
+margin_right = 291.0
+margin_bottom = 391.0
+text = "Continue"
+
+[node name="Button" type="Button" parent="NightMenu"]
+margin_left = 166.0
+margin_top = 371.0
+margin_right = 235.0
+margin_bottom = 391.0
+text = "   Store   "
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
 [connection signal="ready" from="Roundtimer/Control/Timer" to="Roundtimer/Control/CustomLabel" method="_on_Timer_ready"]
 [connection signal="timeout" from="Roundtimer/Control/Timer" to="Roundtimer/Control/CustomLabel" method="toggle_visibility"]
+[connection signal="draw" from="NightMenu/VBoxContainer" to="." method="_on_VBoxContainer_draw"]
+[connection signal="ready" from="NightMenu/StoreMenu" to="." method="_on_StoreMenu_ready"]

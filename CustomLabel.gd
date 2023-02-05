@@ -3,7 +3,7 @@ extends Label
 func toggle_visibility() -> void:
 	visible = not visible
 	text = "replacement"
-
+	$"../../../NightMenu".visible = true
 
 func _on_Timer_ready():
 	text = str($"../Timer".time_left)# Replace with function body.

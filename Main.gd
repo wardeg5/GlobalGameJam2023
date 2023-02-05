@@ -2,6 +2,7 @@ extends Node
 
 export (PackedScene) var mob_scene
 
+var dayCount = 0
 
 func _ready():
 	randomize()
@@ -17,3 +18,12 @@ func _on_MobTimer_timeout():
 
 	add_child(mob)
 	mob.connect("squashed", $UserInterface/ScoreLabel, "_on_Mob_squashed")
+
+
+#func _on_StoreMenu_ready():
+#	$StoreMenu.hide() # Replace with function body.
+
+
+func _on_VBoxContainer_draw():
+	dayCount += 1
+	$NightMenu/RichTextLabel.text = "End of Day " + str(dayCount)
