@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=2]
@@ -315,6 +315,24 @@ font_data = ExtResource( 15 )
 
 [sub_resource type="Theme" id=14]
 default_font = SubResource( 13 )
+
+[sub_resource type="BoxShape" id=15]
+extents = Vector3( 5.373, 1, 5.354 )
+
+[sub_resource type="BoxShape" id=16]
+extents = Vector3( 11.3, 1, 6.67 )
+
+[sub_resource type="BoxShape" id=17]
+extents = Vector3( 6.29333, 1, 4.82297 )
+
+[sub_resource type="BoxShape" id=18]
+extents = Vector3( 5.8, 1, 4.3 )
+
+[sub_resource type="BoxShape" id=19]
+extents = Vector3( 7.63033, 1, 6.09851 )
+
+[sub_resource type="BoxShape" id=21]
+extents = Vector3( 9.3, 1, 5.2 )
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 11 )
@@ -1638,6 +1656,54 @@ stream = ExtResource( 20 )
 
 [node name="MainTheme" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 21 )
+
+[node name="Dirt1" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt1"]
+transform = Transform( 1.53786, 0, -0.133331, 0, 1, 0, 0.20902, 0, 0.980981, 85.9, 0.992, 91.86 )
+shape = SubResource( 15 )
+
+[node name="Dirt2" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.6, 0.96, 92.3 )
+shape = SubResource( 16 )
+
+[node name="Dirt3" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 136.082, 0, 92.5648 )
+shape = SubResource( 17 )
+
+[node name="Dirt4" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 133.798, 0, 70.6376 )
+shape = SubResource( 18 )
+
+[node name="Dirt5" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 88.2521, 0, 68.1781 )
+shape = SubResource( 19 )
+
+[node name="Dirt6" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape" type="CollisionShape" parent="Dirt6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.279, 0, 70.2828 )
+shape = SubResource( 21 )
 
 [connection signal="timeout" from="MobTimer" to="." method="_on_MobTimer_timeout"]
 [connection signal="ready" from="Roundtimer/Control/Timer" to="Roundtimer/Control/CustomLabel" method="_on_Timer_ready"]
