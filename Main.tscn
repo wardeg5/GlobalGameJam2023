@@ -1627,24 +1627,27 @@ margin_right = 299.0
 margin_bottom = 460.0
 
 [node name="SpeedButton" type="Button" parent="NightMenu/StoreMenu/VBoxContainer"]
+visible = false
 margin_right = 114.0
 margin_bottom = 20.0
 text = "Walk Speed +1"
 
 [node name="GrowButton" type="Button" parent="NightMenu/StoreMenu/VBoxContainer"]
+visible = false
 margin_top = 24.0
 margin_right = 114.0
 margin_bottom = 44.0
 text = "Growth Time +1"
 
 [node name="NextDayButton" type="Button" parent="NightMenu"]
-margin_left = 251.0
+margin_left = 198.0
 margin_top = 371.0
-margin_right = 291.0
+margin_right = 267.0
 margin_bottom = 391.0
 text = "Continue"
 
 [node name="StoreButton" type="Button" parent="NightMenu"]
+visible = false
 margin_left = 166.0
 margin_top = 371.0
 margin_right = 235.0

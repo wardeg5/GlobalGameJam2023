@@ -55,8 +55,11 @@ func _on_timer_timeout():
 	if diedinDirt:
 		#spawn a veggie
 		print('veggie time!')
+		$metarig/Skeleton/Cube.visible = false
+		$MeshInstance/Carrot.visible = true
 	else:
 		#pop back up and carry on
+		$metarig.rotate_x(120)
 		_set_velocity()
 
 func _set_velocity():

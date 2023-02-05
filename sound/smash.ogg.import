@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/smash.ogg-cd67f50875db6abf8baad218669ef7d6.oggstr"
+
+[deps]
+
+source_file="res://sound/smash.ogg"
+dest_files=[ "res://.import/smash.ogg-cd67f50875db6abf8baad218669ef7d6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

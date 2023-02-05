@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://art/models/glb/Material_001.material" type="Material" id=1]
 [ext_resource path="res://Mob.gd" type="Script" id=2]
 [ext_resource path="res://art/textures/Material.001_Base_Color.png" type="Texture" id=3]
 [ext_resource path="res://shaders/psx.shader" type="Shader" id=4]
+[ext_resource path="res://art/models/FBX/Carrot.fbx" type="PackedScene" id=5]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "seedling_walk_idle_fall_Cube001"
@@ -952,5 +953,10 @@ shape = SubResource( 6 )
 [node name="DeathOrStandup" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+
+[node name="Carrot" parent="MeshInstance" instance=ExtResource( 5 )]
+visible = false
 
 [connection signal="screen_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_screen_exited"]
