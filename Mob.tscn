@@ -949,4 +949,8 @@ shape = SubResource( 6 )
 
 [node name="VisibilityNotifier" type="VisibilityNotifier" parent="."]
 
+[node name="DeathOrStandup" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [connection signal="screen_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_screen_exited"]

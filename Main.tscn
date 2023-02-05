@@ -1569,24 +1569,32 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.653, 0.964293, 92.3591 )
 shape = SubResource( 12 )
 
 [node name="Dirt3" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Dirt3"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 135.87, 0.87294, 92.5802 )
 shape = SubResource( 13 )
 
 [node name="Dirt4" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Dirt4"]
 transform = Transform( 0.969119, 0, -0.246593, 0, 1, 0, 0.246593, 0, 0.969119, 89.0022, 0.879822, 68.7721 )
 shape = SubResource( 14 )
 
 [node name="Dirt5" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Dirt5"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 113.333, 0.892895, 70.2746 )
 shape = SubResource( 15 )
 
 [node name="Dirt6" type="Area" parent="." groups=["DirtAreas"]]
+collision_layer = 2
+collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Dirt6"]
 transform = Transform( 0.998937, 0, 0.0460953, 0, 1, 0, -0.0460953, 0, 0.998937, 134.092, 0.870056, 70.8793 )
